@@ -10,7 +10,10 @@ function submitLogin(event) {
     if (email.value === "" || password.value === "") {
         window.alert("Wrong. Write email and password!");
     } else {
-        console.log(`Email: ${email.value} and Password: ${password.value}`);
+        console.log({
+            email: `${email.value}`,
+            password: `${password.value}`
+        });
         event.currentTarget.reset();
     };
 };
